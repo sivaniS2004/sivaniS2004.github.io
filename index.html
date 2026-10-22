@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sivani S – AI & Machine Learning Engineer</title>
+<meta name="description" content="Portfolio of Sivani S: anomaly detection, computer vision and machine learning.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f5;--surface:#fff;--ink:#16213a;--muted:#55607a;--line:#d3dae6;--signal:#d6361f;--trace:#2447d8}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1626;--surface:#172037;--ink:#e8edf8;--muted:#9aa6c2;--line:#2a3554;--signal:#ff6a52;--trace:#7d97ff}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "Public Sans",system-ui,sans-serif}
+a{color:var(--trace)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+nav{display:flex;gap:1.25rem;flex-wrap:wrap;padding:1.25rem 0;font-weight:500;font-size:.95rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{padding:2rem 0 2.5rem}
+.hero h1{font-size:clamp(2.6rem,9vw,4.8rem);font-weight:700;letter-spacing:-.02em}
+.hero p.role{font-size:1.2rem;color:var(--muted);margin:.75rem 0 0;max-width:34rem}
+.trace{margin:2rem 0 .5rem;width:100%;height:auto}
+.trace .base{fill:none;stroke:var(--trace);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.4s ease-out forwards}
+.trace .flag{opacity:0;animation:pop .4s 2s forwards}
+.trace text{fill:var(--signal);font:600 13px "Public Sans",sans-serif}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.trace .base{animation:none;stroke-dashoffset:0}.trace .flag{animation:none;opacity:1}}
+.cap{font-size:.85rem;color:var(--muted);margin:0}
+section{padding:2.5rem 0;border-top:1px solid var(--line)}
+section>h2{font-size:1.9rem;margin-bottom:1.25rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-top:1.5rem}
+.stats div{border-left:3px solid var(--signal);padding-left:.8rem}
+.stats b{display:block;font:700 1.8rem "Bricolage Grotesque",sans-serif}
+.stats span{font-size:.9rem;color:var(--muted)}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.4rem;margin-bottom:1.1rem}
+.proj h3{font-size:1.35rem;margin-bottom:.4rem}
+.proj ul{padding-left:1.1rem;margin:.6rem 0}
+.tags{font-size:.88rem;color:var(--muted);margin:0}
+.job{margin-bottom:1.6rem}
+.job h3{font-size:1.15rem}
+.job .when{color:var(--muted);font-size:.9rem;margin:.15rem 0 .5rem}
+.job ul{margin:0;padding-left:1.1rem}
+.skills dt{font-weight:600;margin-top:.9rem}
+.skills dd{margin:.1rem 0 0;color:var(--muted)}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main">
+  <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+</nav>
+
+<header class="hero">
+  <h1>Sivani S</h1>
+  <p class="role">AI and machine learning engineer building anomaly detection and computer vision systems.</p>
+  <svg class="trace" viewBox="0 0 800 160" role="img" aria-label="Telemetry signal with one spike flagged as an anomaly">
+    <line x1="0" y1="100" x2="800" y2="100" stroke="var(--line)" stroke-dasharray="4 6"/>
+    <path class="base" d="M0 100 L40 92 L80 108 L120 96 L160 104 L200 90 L240 106 L280 98 L320 102 L360 94 L400 20 L430 138 L460 98 L500 106 L540 94 L580 102 L620 92 L660 104 L700 96 L740 100 L800 98"/>
+    <g class="flag"><circle cx="400" cy="20" r="9" fill="none" stroke="var(--signal)" stroke-width="2.5"/><text x="418" y="26">Anomaly flagged</text></g>
+  </svg>
+  <p class="cap">Real-time telemetry, one spike caught. This is the kind of problem I work on.</p>
+  <div class="btns">
+    <a class="btn main" href="#projects">See my projects</a>
+    <a class="btn" href="mailto:sivani74187@gmail.com">Email me</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I recently completed a B.Tech in Artificial Intelligence and Data Science. At Bharat Electronics Limited (Ministry of Defence), I built machine learning models that detect threats in live network telemetry, and I set up the dashboards the security team watches around the clock. I also train convolutional neural networks to classify images, such as Mars versus Moon terrain.</p>
+  <p>I am now moving toward robotics and space systems, learning OpenCV, ROS2, C++ and sensor fusion. I am looking for ML, computer vision or data roles where models run on real signals.</p>
+  <div class="stats">
+    <div><b>92%</b><span>threat prediction accuracy</span></div>
+    <div><b>65%</b><span>fewer false positives</span></div>
+    <div><b>94%</b><span>CNN image accuracy</span></div>
+    <div><b>80%</b><span>of detection workflows automated</span></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="job">
+    <h3>Cybersecurity Analytics Intern, Bharat Electronics Limited</h3>
+    <p class="when">Dec 2025 to Mar 2026, Bangalore. Network and Cyber Security, Ministry of Defence</p>
+    <ul>
+      <li>Built CNN and Random Forest anomaly detection models on real-time telemetry: 92% threat prediction accuracy, 65% fewer false positives.</li>
+      <li>Deployed ELK Stack dashboards for 24/7 monitoring, automating 80% of routine detection workflows and improving response time by 55%.</li>
+      <li>Built forecasting models that helped prevent 15+ security incidents, and turned telemetry into risk assessments for senior stakeholders.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <h3>Machine Learning Intern, Elyusium</h3>
+    <p class="when">Aug 2024 to Sep 2024, Madurai</p>
+    <ul>
+      <li>Trained a CNN that classifies Mars and Moon surface imagery with 94% accuracy.</li>
+      <li>Built 6 end-to-end supervised, unsupervised and reinforcement learning pipelines.</li>
+      <li>Improved accuracy by 18% and cut training time by 30% with GridSearchCV tuning.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <h3>Data Science and Analytics Intern, Geons Logix</h3>
+    <p class="when">Jun 2024, Madurai</p>
+    <ul>
+      <li>Built ETL pipelines with MICE and KNN imputation and feature scaling.</li>
+      <li>Developed predictive models for forecasting, churn and segmentation.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <article class="proj">
+    <h3>Planetary Surface Image Classifier</h3>
+    <p class="tags">Python, TensorFlow, CNN</p>
+    <ul>
+      <li>Classifies Mars and Moon terrain from images with 94% accuracy.</li>
+      <li>GridSearchCV tuning gave an 18% accuracy gain and 30% faster training.</li>
+    </ul>
+    <a href="https://github.com/sivaniS2004/planetary-surface-classifier">View on GitHub</a>
+  </article>
+  <article class="proj">
+    <h3>AI-Based Anomaly Detection and Security Auditing Framework</h3>
+    <p class="tags">Python, ELK Stack, Scikit-learn. Built at BEL</p>
+    <ul>
+      <li>Real-time detection pipeline with a live Kibana dashboard for 24/7 monitoring.</li>
+      <li>92% detection accuracy, 65% fewer false positives. Source stays private because of the defence context; a sanitized demo version is on GitHub.</li>
+    </ul>
+    <a href="https://github.com/sivaniS2004/anomaly-detection-demo">View on GitHub</a>
+  </article>
+  <article class="proj">
+    <h3>ML and Data Analytics Pipeline</h3>
+    <p class="tags">Python, Pandas, Scikit-learn</p>
+    <ul>
+      <li>Preprocessing, feature engineering, classification and segmentation with Random Forest, Decision Trees and K-Means.</li>
+      <li>Evaluated with accuracy, precision, recall and F1-score.</li>
+    </ul>
+    <a href="https://github.com/sivaniS2004/internship">View on GitHub</a>
+  </article>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <dl>
+    <dt>Programming</dt><dd>Python (Pandas, NumPy, Scikit-learn, TensorFlow, Keras), SQL, R</dd>
+    <dt>Machine learning and vision</dt><dd>CNN, image classification, Random Forest, SVM, K-Means, PCA, cross-validation, hyperparameter tuning</dd>
+    <dt>Anomaly detection</dt><dd>Real-time telemetry analysis, ELK Stack, threat detection pipelines</dd>
+    <dt>Tools</dt><dd>Docker, AWS, Azure, Git and GitHub, Jupyter, Linux</dd>
+    <dt>Learning now</dt><dd>OpenCV, ROS2, C++, sensor fusion</dd>
+  </dl>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p><a href="mailto:sivani74187@gmail.com">sivani74187@gmail.com</a><br>Changanassery, Kerala, India</p>
+  <p><a href="https://github.com/sivaniS2004">GitHub</a> and <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME">LinkedIn</a></p>
+</section>
+
+<footer>Sivani S. B.Tech in AI and Data Science, Ramco Institute of Technology, 2026.</footer>
+</div>
+</body>
+</html>
